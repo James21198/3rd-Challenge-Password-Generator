@@ -27,12 +27,12 @@ function generatePassword () {
   var passwordLength = prompt("How long do you want your password to be?");
 
   if (passwordLength <8) {
-    console.log("Error: Password must be at least 8 characters");
-    return;
+    alert("Error: Password must be at least 8 characters");
+    return "";
   }else if (passwordLength >128) {
-    console.log("Error: Password must be less than 128 characters");
-    return;
-  }else console.log("Password meets the correct requirements");
+    alert("Error: Password must be less than 128 characters");
+    return "";
+  }else alert("Password meets the correct requirements");
 
   var passwordCharacters = "";
 
